@@ -191,7 +191,7 @@ When using K8s 1.18 or higher, it is also recommended to configure backoff and r
 Prerequisites:
 
 - Get Azure credentials from the [**Permissions**](#permissions) step above.
-- Get the name of the initial Azure deployment resource for the cluster. You can find this in the [Azure Portal](https://portal.azure.com) or with the `az deployment list` command. If there are multiple deployments, get the name of the first one.
+- Get the name of the initial Azure deployment resource for the cluster. You can find this in the [Azure Portal](https://portal.azure.com) or with the `az deployment sub list` command. If there are multiple deployments, get the name of the first one.
 
 Make a copy of [cluster-autoscaler-standard-control-plane.yaml](examples/cluster-autoscaler-standard-control-plane.yaml). Fill in the placeholder values for the `cluster-autoscaler-azure` secret data by base64-encoding each of your Azure credential fields.
 
